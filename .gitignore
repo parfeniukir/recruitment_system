@@ -1,0 +1,60 @@
+# Editors
+# ---------------------------
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+
+
+# Python stuff
+# ---------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# pyenv
+.python-version
+
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+
+
+# Any cache instances
+# ---------------------------
+*cache*
+
+# Storages stuff
+# ---------------------------
+
+# Sqlite stuff
+*.sqlite
+*.sqlite3
+*.db
+
+
+## Logs
+logs/
+
+
+
+# Project configurations
+# ---------------------------
+.env
+
+# Virtual environments
+.venv
+env/
+venv/
+
+
+
+# Operating system stuff
+# ---------------------------
+
+# MacOS
+.DS_Store

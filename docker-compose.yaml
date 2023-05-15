@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    image: jobs_django_application
+    container_name: jobs_django_application
+    env_file: '.env'
+    ports:
+      - '8000:80'
+    depends_on:
+      - db
+    volumes:
+      - ./:/app/
+
+  db:
+    image: postgres
+    container_name: jobs_postgres
+    env_file: '.env'
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+# Save the data on the container stop
+volumes:
+  pg_data: {}
